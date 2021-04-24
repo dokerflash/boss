@@ -1,0 +1,17 @@
+const Discord = require('discord.js');
+
+module.exports = {
+  name: 'github',
+  aliases: ['git', 'github'],
+  cooldown: 3,
+  guildOnly: false,
+  async run(client, message, args) {
+    const embed = new Discord.MessageEmbed()
+      .setColor('#4cd8b2')
+      .setTitle('Github de Doker ᶜˢˢ#3836')
+      .setDescription('https://github.com/dokerflash')
+      .setThumbnail('https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png');
+
+    await message.FoxyReply(embed);
+  },
+}
